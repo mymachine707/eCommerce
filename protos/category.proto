@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+option go_package = "./eCommerce";
+
+// protos common.proto filedan import qilindi
+import "protos/common.proto";
+
+
+
+// The service definition.
+service CategoryService {
+    rpc Ping (Empty) returns (Pong) {}
+    rpc CreateCategory (CreateCategoryRequest) returns (Category) {}
+    rpc UpdateCategory (UpdateCategoryRequest) returns (Category) {}
+    rpc DeleteCategory (DeleteCategoryRequest) returns (Category) {}
+    rpc GetCategoryList (GetCategoryListRequest) returns (GetCategoryListResponse) {}
+    rpc GetCategoryById (GetCategoryByIDRequest) returns (Category) {} 
+}
+
+// Category ...
+message Category { 
+    string id = 1;
+    string category_name = 2;
+    string description = 3;
+    string created_at = 4;
+    string updated_at = 5;
+}
+
+message CreateCategoryRequest{
+    string category_name = 1;
+    string description = 2;
+}
+
+
+message UpdateCategoryRequest{
+    string id = 1;
+    string category_name = 2;
+    string description = 3;
+}
+
+message DeleteCategoryRequest{
+    string id = 1;
+}
+
+message GetCategoryListRequest{
+    int32 offset = 1;
+    int32 limit = 2;
+    string search = 3;
+}
+message GetCategoryListResponse{
+    repeated Category categorys = 1;
+}
+
+message GetCategoryByIDRequest{
+    string id =1;
+}

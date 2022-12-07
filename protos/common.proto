@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "./eCommerce";
+
+ 
+message Empty {
+}
+
+message Pong {
+    string message = 1;
+}
