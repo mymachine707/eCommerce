@@ -3,3 +3,6 @@
 
 // submodule qo'shish uchun
 git submodule add https://github.com/mymachine707/auth_service.git
+
+
+git submodule add https://github.com/mymachine707/category_service.git
