@@ -1,0 +1,3 @@
+[submodule "category_service"]
+	path = category_service
+	url = https://github.com/mymachine707/category_service.git
