@@ -1,3 +1,6 @@
 [submodule "category_service"]
 	path = category_service
 	url = https://github.com/mymachine707/category_service.git
+[submodule "eCommerce_apiGETWAY"]
+	path = eCommerce_apiGETWAY
+	url = https://github.com/mymachine707/eCommerce_apiGETWAY.git
