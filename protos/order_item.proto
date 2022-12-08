@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+option go_package = "./eCommerce";
+
+// protos common.proto filedan import qilindi
+import "protos/common.proto";
+
+
+
+// The service definition.
+service OrderItemService {
+    rpc Ping (Empty) returns (Pong) {}
+    rpc CreateOrderItem (CreateOrderItemRequest) returns (OrderItem) {}
+    rpc DeleteOrderItem (DeleteOrderItemRequest) returns (OrderItem) {}
+    rpc GetOrderItemList (GetOrderItemListRequest) returns (GetOrderItemListResponse) {}
+    rpc GetOrderItemById (GetOrderItemByIDRequest) returns (OrderItem) {} 
+}
+
+// OrderItem ...
+message OrderItem { 
+    string id = 1;
+    string product_id = 2;
+    string client_id = 3;
+    string totalPrice = 4;
+    string created_at = 5;
+    string updated_at = 6;
+}
+
+message CreateOrderItemRequest{
+    string product_id = 1;
+    string client_id = 2;
+    string totalPrice = 3;
+}
+
+
+message DeleteOrderItemRequest{
+    string id = 1;
+}
+
+message GetOrderItemListRequest{
+    int32 offset = 1;
+    int32 limit = 2;
+    string search = 3;
+}
+message GetOrderItemListResponse{
+    repeated OrderItem orderItems = 1;
+}
+
+message GetOrderItemByIDRequest{
+    string id =1;
+}
+

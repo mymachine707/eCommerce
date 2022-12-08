@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+option go_package = "./eCommerce";
+
+// protos common.proto filedan import qilindi
+import "protos/common.proto";
+
+
+
+// The service definition.
+service OrderService {
+    rpc Ping (Empty) returns (Pong) {}
+    rpc CreateOrder (CreateOrderRequest) returns (Order) {}
+    rpc UpdateOrder (UpdateOrderRequest) returns (Order) {}
+    rpc DeleteOrder (DeleteOrderRequest) returns (Order) {}
+    rpc GetOrderList (GetOrderListRequest) returns (GetOrderListResponse) {}
+    rpc GetOrderById (GetOrderByIDRequest) returns (GetOrderByIDResponse) {} 
+}
+
+// Order ...
+message Order { 
+    string id = 1;
+    string product_id = 2;
+    string client_id = 3;
+    string count = 4;
+}
+
+message CreateOrderRequest{
+    string product_id = 1;
+    string client_id = 2;
+    string count = 3;
+}
+
+
+message UpdateOrderRequest{
+    string count = 2;
+}
+
+message DeleteOrderRequest{
+    string id = 1;
+}
+
+message GetOrderListRequest{
+    int32 offset = 1;
+    int32 limit = 2;
+    string search = 3;
+}
+message GetOrderListResponse{
+    repeated Order orders = 1;
+}
+
+message GetOrderByIDRequest{
+    string id =1;
+}
+
+message GetOrderByIDResponse {
+    message Product {
+        string id = 1;
+        string category_id = 2;
+        string product_name = 3;
+        string description = 4;
+        string price = 5;
+        string created_at = 6;
+        string updated_at = 7;
+    }
+    string id = 1;
+    Product product = 2;
+    string client_id = 3;
+    string count = 4;
+    string created_at = 6;
+    string updated_at = 7;
+}
