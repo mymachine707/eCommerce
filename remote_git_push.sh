@@ -12,7 +12,7 @@ cd ..
 
 cd order_service/
 git add .
-git commit -m"order storage yozildi"
+git commit -m"order-item storage yozildi"
 git push
 cd ..
 
