@@ -6,8 +6,8 @@ protoc --go_out=./protogen \
     ./protos/*.proto
 
 
-rm -rf ./api_getway/protogen
-cp -r protogen ./api_getway/
+rm -rf ./eCommerce_apiGETWAY/protogen
+cp -r protogen ./eCommerce_apiGETWAY/
 
 rm -rf ./category_service/protogen
 cp -r protogen ./category_service/

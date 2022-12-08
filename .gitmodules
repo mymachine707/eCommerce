@@ -4,3 +4,6 @@
 [submodule "eCommerce_apiGETWAY"]
 	path = eCommerce_apiGETWAY
 	url = https://github.com/mymachine707/eCommerce_apiGETWAY.git
+[submodule "order_service"]
+	path = order_service
+	url = https://github.com/mymachine707/order_service.git
