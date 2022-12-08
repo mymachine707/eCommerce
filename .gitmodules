@@ -7,6 +7,3 @@
 [submodule "order_service"]
 	path = order_service
 	url = https://github.com/mymachine707/order_service.git
-[submodule "authorization_client"]
-	path = authorization_client
-	url = https://github.com/mymachine707/authorization_client.git
