@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+option go_package = "./eCommerce";
+
+// protos common.proto filedan import qilindi
+import "protos/common.proto";
+
+
+
+// The service definition.
+service ClientService {
+    rpc Ping (Empty) returns (Pong) {}
+    rpc CreateClient (CreateClientRequest) returns (Client) {}
+    rpc UpdateClient (UpdateClientRequest) returns (Client) {}
+    rpc DeleteClient (DeleteClientRequest) returns (Client) {}
+    rpc GetClientList (GetClientListRequest) returns (GetClientListResponse) {}
+    rpc GetClientById (GetClientByIDRequest) returns (Client) {} 
+}
+
+// Client ...
+message Client { 
+    string id = 1;
+    string firstname = 2;
+    string lastname = 3;
+    string phoneNumber = 4;
+    string address = 5;
+    string created_at = 6;
+    string updated_at = 7;
+}
+
+message CreateClientRequest{
+    string firstname = 2;
+    string lastname = 3;
+    string phoneNumber = 4;
+    string address = 5;
+}
+
+
+message UpdateClientRequest{
+    string id = 1;
+    string firstname = 2;
+    string lastname = 3;
+    string phoneNumber = 4;
+    string address = 5;
+}
+
+message DeleteClientRequest{
+    string id = 1;
+}
+
+message GetClientListRequest{
+    int32 offset = 1;
+    int32 limit = 2;
+    string search = 3;
+}
+message GetClientListResponse{
+    repeated Client clients = 1;
+}
+
+message GetClientByIDRequest{
+    string id =1;
+}

@@ -5,4 +5,4 @@ git submodule add https://github.com/mymachine707/eCommerce_apiGETWAY.git
 
 git submodule add https://github.com/mymachine707/order_service.git
 
-1
+git submodule add https://github.com/mymachine707/auhtorization_client.git
