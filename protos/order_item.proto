@@ -13,23 +13,21 @@ service OrderItemService {
     rpc CreateOrderItem (CreateOrderItemRequest) returns (OrderItem) {}
     rpc DeleteOrderItem (DeleteOrderItemRequest) returns (OrderItem) {}
     rpc GetOrderItemList (GetOrderItemListRequest) returns (GetOrderItemListResponse) {}
-    rpc GetOrderItemById (GetOrderItemByIDRequest) returns (OrderItem) {} 
+    rpc GetOrderItemById (GetOrderItemByIDRequest) returns (GetOrderItemByIDResponse) {} 
 }
 
 // OrderItem ...
 message OrderItem { 
     string id = 1;
-    string product_id = 2;
-    string client_id = 3;
-    string totalPrice = 4;
-    string created_at = 5;
-    string updated_at = 6;
+    string client_id = 2;
+    string totalPrice = 3;
+    string created_at = 4;
+    string updated_at = 5;
 }
 
 message CreateOrderItemRequest{
-    string product_id = 1;
-    string client_id = 2;
-    string totalPrice = 3;
+    string client_id = 1;
+    string totalPrice = 2;
 }
 
 
@@ -48,5 +46,19 @@ message GetOrderItemListResponse{
 
 message GetOrderItemByIDRequest{
     string id =1;
+}
+
+message GetOrderItemByIDResponse{
+    message Order { 
+        string id = 1;
+        string product_id = 2;
+        string client_id = 3;
+        string count = 4;
+    }
+    string id = 1;
+    Order client_orders = 2;
+    string totalPrice = 3;
+    string created_at = 4;
+    string updated_at = 5;
 }
 
