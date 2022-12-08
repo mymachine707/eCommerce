@@ -16,7 +16,7 @@ git commit -m"git commit successfuly"
 git push
 cd ..
 
-cd authorization_client/
+cd authorizationClient/
 git add .
 git commit -m"git commit successfuly"
 git push
