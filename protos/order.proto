@@ -46,7 +46,6 @@ message DeleteOrderRequest{
 message GetOrderListRequest{
     int32 offset = 1;
     int32 limit = 2;
-    string search = 3;
 }
 message GetOrderListResponse{
     repeated Order orders = 1;
@@ -57,17 +56,17 @@ message GetOrderByIDRequest{
 }
 
 message GetOrderByIDResponse {
-    message Product {
-        string id = 1;
-        string category_id = 2;
-        string product_name = 3;
-        string description = 4;
-        string price = 5;
-        string created_at = 6;
-        string updated_at = 7;
-    }
+    // message Product {
+    //     string id = 1;
+    //     string category_id = 2;
+    //     string product_name = 3;
+    //     string description = 4;
+    //     string price = 5;
+    //     string created_at = 6;
+    //     string updated_at = 7;
+    // }
     string id = 1;
-    Product product = 2;
+    string product_id = 2;
     string client_id = 3;
     string count = 4;
     string created_at = 6;

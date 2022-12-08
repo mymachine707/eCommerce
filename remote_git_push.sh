@@ -12,7 +12,7 @@ cd ..
 
 cd order_service/
 git add .
-git commit -m"order-item storage yozildi"
+git commit -m"order service succesfuly tested by bloomRPC"
 git push
 cd ..
 
