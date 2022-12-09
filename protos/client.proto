@@ -32,13 +32,13 @@ message Client {
 }
 
 message CreateClientRequest{
-    string firstname = 2;
-    string lastname = 3;
-    string username = 4;
-    string phoneNumber = 5;
-    string address = 6;
-    string type =7;
-    string password = 8;
+    string firstname = 1;
+    string lastname = 2;
+    string username = 3;
+    string phoneNumber = 4;
+    string address = 5;
+    string type =6;
+    string password = 7;
 }
 
 

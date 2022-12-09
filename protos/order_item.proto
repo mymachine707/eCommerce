@@ -21,15 +21,17 @@ message OrderItem {
     string id = 1;
     string productName= 2;
     string client_id = 3;
-    string totalPrice = 4;
-    string created_at = 5;
-    string updated_at = 6;
+    string client_fullname = 4;
+    string totalPrice = 5;
+    string created_at = 6;
+    string updated_at = 7;
 }
 
 message CreateOrderItemRequest{
     string productName= 1;
     string client_id = 2;
-    string totalPrice = 3;
+    string client_fullname = 3;
+    string totalPrice = 4;
 }
 
 
@@ -50,12 +52,12 @@ message GetOrderItemByIDRequest{
 }
 
 message GetOrderItemByIDResponse{
-
     string id = 1;
     string productName= 2;
     string client_id = 3;
-    string totalPrice = 4;
-    string created_at = 5;
-    string updated_at = 6;
+    string client_fullname = 4;
+    string totalPrice = 5;
+    string created_at = 6;
+    string updated_at = 7;
 }
 
