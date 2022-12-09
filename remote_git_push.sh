@@ -12,13 +12,13 @@ cd ..
 
 cd order_service/
 git add .
-git commit -m"Order hammasi joyida qaytadan tuzatildi server ishlavotti"
+git commit -m"git commit successfuly"
 git push
 cd ..
 
 cd authorizationClient/
 git add .
-git commit -m"git commit successfuly"
+git commit -m"Client serviceda faqat getClientList ishlamiyapti to'g'irlash kere qoganlari hammasi ishlavotti bloomRPC dan tekshirildi"
 git push
 cd ..
 

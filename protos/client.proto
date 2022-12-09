@@ -24,8 +24,9 @@ message Client {
     string lastname = 3;
     string phoneNumber = 4;
     string address = 5;
-    string created_at = 6;
-    string updated_at = 7;
+    string type =6;
+    string created_at = 7;
+    string updated_at = 8;
 }
 
 message CreateClientRequest{
@@ -33,6 +34,7 @@ message CreateClientRequest{
     string lastname = 3;
     string phoneNumber = 4;
     string address = 5;
+    string type =6;
 }
 
 
@@ -42,6 +44,7 @@ message UpdateClientRequest{
     string lastname = 3;
     string phoneNumber = 4;
     string address = 5;
+    string type =6;
 }
 
 message DeleteClientRequest{
