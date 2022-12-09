@@ -18,7 +18,7 @@ cd ..
 
 cd authorizationClient/
 git add .
-git commit -m"Client serviceda faqat getClientList ishlamiyapti to'g'irlash kere qoganlari hammasi ishlavotti bloomRPC dan tekshirildi"
+git commit -m"client servicega username bilan password qo'shildi protogen yengilandi"
 git push
 cd ..
 

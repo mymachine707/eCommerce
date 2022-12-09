@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option go_package = "./eCommerce";
+
+// protos common.proto filedan import qilindi
+import "protos/common.proto";
+
+
+
+// The service definition.
+service AuthService {
+    // Ping rpc...
+    rpc Ping (Empty) returns (Pong) {}
+   
+    rpc Login (LoginAuthRequest) returns (TokenResponse) {}
+    rpc HasAccess (TokenRequest) returns (HasAccessResponse) {}
+}
+
+message LoginAuthRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message TokenResponse {
+    string Token = 1;
+}
+
+message TokenRequest {
+    string Token = 1;
+}
+
+message HasAccessResponse {
+    Auth auth = 1;
+    bool has_access = 2;
+}
+
+message Auth { //+
+    string id = 1;
+    string username = 2;
+    string user_type = 4;
+    string created_at = 5;
+    string updated_at = 6;
+}

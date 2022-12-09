@@ -22,19 +22,23 @@ message Client {
     string id = 1;
     string firstname = 2;
     string lastname = 3;
-    string phoneNumber = 4;
-    string address = 5;
-    string type =6;
-    string created_at = 7;
-    string updated_at = 8;
+    string username = 4;
+    string phoneNumber = 5;
+    string address = 6;
+    string type =7;
+    string password = 8;
+    string created_at = 9;
+    string updated_at = 10;
 }
 
 message CreateClientRequest{
     string firstname = 2;
     string lastname = 3;
-    string phoneNumber = 4;
-    string address = 5;
-    string type =6;
+    string username = 4;
+    string phoneNumber = 5;
+    string address = 6;
+    string type =7;
+    string password = 8;
 }
 
 
@@ -42,9 +46,11 @@ message UpdateClientRequest{
     string id = 1;
     string firstname = 2;
     string lastname = 3;
-    string phoneNumber = 4;
-    string address = 5;
-    string type =6;
+    string username = 4;
+    string phoneNumber = 5;
+    string address = 6;
+    string type =7;
+    string password = 8;
 }
 
 message DeleteClientRequest{
