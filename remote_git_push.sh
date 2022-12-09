@@ -12,7 +12,7 @@ cd ..
 
 cd order_service/
 git add .
-git commit -m"git commit successfuly"
+git commit -m"Order hammasi joyida qaytadan tuzatildi server ishlavotti"
 git push
 cd ..
 
