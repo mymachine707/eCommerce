@@ -12,7 +12,7 @@ cd ..
 
 cd order_service/
 git add .
-git commit -m"git commit successfuly"
+git commit -m"OrderItem ga Product name qo'shildi barchasi yangilandi service ichida"
 git push
 cd ..
 

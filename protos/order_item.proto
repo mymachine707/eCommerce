@@ -19,15 +19,17 @@ service OrderItemService {
 // OrderItem ...
 message OrderItem { 
     string id = 1;
-    string client_id = 2;
-    string totalPrice = 3;
-    string created_at = 4;
-    string updated_at = 5;
+    string productName= 2;
+    string client_id = 3;
+    string totalPrice = 4;
+    string created_at = 5;
+    string updated_at = 6;
 }
 
 message CreateOrderItemRequest{
-    string client_id = 1;
-    string totalPrice = 2;
+    string productName= 1;
+    string client_id = 2;
+    string totalPrice = 3;
 }
 
 
@@ -50,9 +52,10 @@ message GetOrderItemByIDRequest{
 message GetOrderItemByIDResponse{
 
     string id = 1;
-    string client_id = 2;
-    string totalPrice = 3;
-    string created_at = 4;
-    string updated_at = 5;
+    string productName= 2;
+    string client_id = 3;
+    string totalPrice = 4;
+    string created_at = 5;
+    string updated_at = 6;
 }
 
