@@ -1,27 +1,27 @@
 cd eCommerce_apiGETWAY/
 git add .
-git commit -m"Crud barcha methodlar uchun tekshrildi keyingi bosqich authorization "
+git commit -m"servicela yangilanmoqda"
 git push
 cd ..
 
 cd category_service/
 git add .
-git commit -m"git commit successfuly"
+git commit -m"servicela yangilanmoqda"
 git push
 cd ..
 
 cd order_service/
 git add .
-git commit -m"OrderItem ga Product name qo'shildi barchasi yangilandi service ichida"
+git commit -m"servicela yangilanmoqda"
 git push
 cd ..
 
 cd authorizationClient/
 git add .
-git commit -m"client servicega username bilan password qo'shildi protogen yengilandi"
+git commit -m"servicela yangilanmoqda"
 git push
 cd ..
 
 git add .
-git commit -m"git commit successfuly"
+git commit -m"servicela yangilanmoqda"
 git push
