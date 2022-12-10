@@ -1,0 +1,11 @@
+
+my-list product query search swager to'g'irlash kere
+
+create product categorya boshqa bo'gandigi error messagini to'g'irlash kere
+
+order update service chopporvotti to'g'irlash kere
+order delete service chopporvotti to'g'irlash kere
+
+cba9bce6-c13d-4190-ba60-d68eb961c54c  order id
+# update category qiganda category id o'zgarish omiyapti
+
