@@ -1,11 +1,17 @@
 
 my-list product query search swager to'g'irlash kere
 
-create product categorya boshqa bo'gandigi error messagini to'g'irlash kere
-
 order update service chopporvotti to'g'irlash kere
 order delete service chopporvotti to'g'irlash kere
 
-cba9bce6-c13d-4190-ba60-d68eb961c54c  order id
 # update category qiganda category id o'zgarish omiyapti
 
+
+
+ee317142-0981-4249-b805-104dc6e27eeb category
+
+f5e72dc1-b30f-42a4-b21d-92002e5ccd5a client
+
+9d38e8d1-1fd6-4910-8ce4-2ccf4e2efcbf product
+
+2b7f61ff-c11d-4367-8ead-0175a5b7c57d order
