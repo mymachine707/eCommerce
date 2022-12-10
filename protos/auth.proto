@@ -4,7 +4,7 @@ option go_package = "./eCommerce";
 
 // protos common.proto filedan import qilindi
 import "protos/common.proto";
-
+import "protos/client.proto";
 
 
 // The service definition.
@@ -30,14 +30,6 @@ message TokenRequest {
 }
 
 message HasAccessResponse {
-    Auth auth = 1;
+    Client user = 1;
     bool has_access = 2;
-}
-
-message Auth { //+
-    string id = 1;
-    string username = 2;
-    string user_type = 4;
-    string created_at = 5;
-    string updated_at = 6;
 }
