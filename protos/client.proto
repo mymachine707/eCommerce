@@ -15,6 +15,27 @@ service ClientService {
     rpc DeleteClient (DeleteClientRequest) returns (Client) {}
     rpc GetClientList (GetClientListRequest) returns (GetClientListResponse) {}
     rpc GetClientById (GetClientByIDRequest) returns (Client) {} 
+
+    rpc Login (LoginAuthRequest) returns (TokenResponse) {}
+    rpc HasAccess (TokenRequest) returns (HasAccessResponse) {}
+}
+
+message HasAccessResponse {
+    Client user = 1;
+    bool has_access = 2;
+}
+
+message LoginAuthRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message TokenResponse {
+    string Token = 1;
+}
+
+message TokenRequest {
+    string Token = 1;
 }
 
 // Client ...
