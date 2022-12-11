@@ -65,12 +65,8 @@ message CreateClientRequest{
 
 message UpdateClientRequest{
     string id = 1;
-    string firstname = 2;
-    string lastname = 3;
-    string username = 4;
     string phoneNumber = 5;
     string address = 6;
-    string type =7;
     string password = 8;
 }
 

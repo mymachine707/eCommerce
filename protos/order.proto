@@ -57,7 +57,6 @@ message GetOrderByIDRequest{
     string id =1;
 }
 
-
 message GetOrderByIDResponse {
     string id = 1;
     string product_id = 2;
@@ -68,13 +67,3 @@ message GetOrderByIDResponse {
     string created_at = 7;
     string updated_at = 8;
 }
-
-// message GetOrderFullInfoByIDRequest{
-//     string id =1;
-//     Product product =2;
-// }
-// message GetOrderFullInfoByIDResponse {
-//     GetOrderByIDResponse orderRes = 1;
-//     GetProductByIDResponse productInfo = 2;
-// }
-
