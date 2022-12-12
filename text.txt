@@ -2,91 +2,9 @@
 # update client qilish imkoniyati faqat clinet o'ziga tegishli ma'lumotla uchun bo'lishi kere
 # get client qilish imkoniyati faqat clinet o'ziga tegishli ma'lumotla uchun bo'lishi kere
 # databse ochib kim qaysi zapros berganini yozadigan table ochishim kere!!! 
-# update order qiganda orderitem delete bo'lib boshqattan yoziladigan qilish kere 
+# update order qiganda orderitem delete bo'lib boshqattan yoziladigan qilish kere
 
 
-
-
-sudo
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzA3NDYxNzcsImlhdCI6MTY3MDc0MjU3NywidXNlcl9pZCI6ImQ3ZGM5YjYzLTUwZmUtNGMxNS04MDIwLWU3N2QyNzRhZmNjNiIsInVzZXJuYW1lIjoibXlfbWFjaGluZV83MDcifQ.NQSxySTlQOvwExp_RZw61fOtmymWB5HfnHUGacxoOsg
-
-{
-        "id": "9c5119ac-202a-4558-a904-d32ef994a741",
-        "category_name": "Pitsa",
-        "description": "Katta o'rta va kichik o'lchamdagi pitsalar",
-        "created_at": "2022-12-11T12:16:59.587433Z"
-      }
-
-
-{
-  "data": {
-    "id": "b5a88305-5c46-4810-9b77-b686ada2dce8",
-    "product_id": "af134411-21a1-4050-894e-b96d05d873f5",
-    "client_id": "fbeeb8b6-e819-41d9-984d-636be869f1da",
-    "count": "25",
-    "created_at": "2022-12-11T12:27:47.650596Z",
-    "updated_at": "2022-12-11T12:29:54.345322Z"
-  },
-  "message": "Order Updated"
-}
-
-{
-  "message": "CreatOrder",
-  "data": {
-    "id": "b5a88305-5c46-4810-9b77-b686ada2dce8",
-    "product_id": "af134411-21a1-4050-894e-b96d05d873f5",
-    "client_id": "fbeeb8b6-e819-41d9-984d-636be869f1da",
-    "count": "2",
-    "created_at": "2022-12-11T12:27:47.650596Z"
-  }
-}
-
-{
-  "message": "Product Created",
-  "data": {
-    "id": "af134411-21a1-4050-894e-b96d05d873f5",
-    "category_id": "9c5119ac-202a-4558-a904-d32ef994a741",
-    "product_name": "Dreems 2",
-    "price": "45000",
-    "created_at": "2022-12-11T12:23:37.841269Z"
-  }
-}
-
-{
-  "message": "CreatClient",
-  "data": {
-    "id": "fbeeb8b6-e819-41d9-984d-636be869f1da",
-    "firstname": "John",
-    "lastname": "Doe",
-    "username": "w701",
-    "phoneNumber": "998797456322",
-    "address": "wall street",
-    "type": "client",
-    "password": "$argon2id$v=19$models=65536,t=3,p=4$2ZHyL3+fkQPFq1Wf/Llp1Q$k27cN/J7Jc5LtpXBS+WYLCOPEl/+GukdjoZqLwhxnco",
-    "created_at": "2022-12-11T12:10:19.267516Z"
-  }
-}
-
-client
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzA3NDYyODEsImlhdCI6MTY3MDc0MjY4MSwidXNlcl9pZCI6ImZiZWViOGI2LWU4MTktNDFkOS05ODRkLTYzNmJlODY5ZjFkYSIsInVzZXJuYW1lIjoidzcwMSJ9.qNk3gnMlaVnuMfQEy2tR4J2c4OQcl7B3vQRju3aPZVk
-
-
-"password": "987",
-Response body
-Download
-{
-  "data": {
-    "id": "fbeeb8b6-e819-41d9-984d-636be869f1da",
-    "firstname": "John",
-    "lastname": "Doe",
-    "username": "w701",
-    "phoneNumber": "2222222222",
-    "address": "wall street",
-    "type": "client",
-    "password": "$argon2id$v=19$models=65536,t=3,p=4$G7KHgidyUwtzT/V/3vECYw$Cmj2iIrcqUaaMy4vOo8duWt8lA4LRZwRl2WPukNEiNg",
-    "created_at": "2022-12-11T12:10:19.267516Z",
-    "updated_at": "2022-12-11 12:13:22.860017 +0000 +0000"
-  },
-  "message": "Client Updated"
-}
-
+update order 
+    1   update order qiganda order item update bo'lishi kere   
+    2   update order qilish uchun created_at dan maxsimum 2 daqiqa o'tmagan bo'lishi kere, Agar o'tgan bo'sa updatega ruhsat bermiman
