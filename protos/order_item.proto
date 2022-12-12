@@ -4,14 +4,16 @@ option go_package = "./eCommerce";
 
 // protos common.proto filedan import qilindi
 import "protos/common.proto";
-
+import "protos/product.proto";
+import "protos/client.proto";
 
 
 // The service definition.
 service OrderItemService {
     rpc Ping (Empty) returns (Pong) {}
-    rpc CreateOrderItem (CreateOrderItemRequest) returns (OrderItem) {}
-    rpc DeleteOrderItem (DeleteOrderItemRequest) returns (OrderItem) {}
+    rpc CreateOrderItem (CreateOrderItemRequest) returns (Empty) {}
+    rpc UpdateOrder (UpdateOrderItemRequest) returns (Empty) {}
+    rpc DeleteOrderItem (DeleteOrderItemRequest) returns (Empty) {}
     rpc GetOrderItemList (GetOrderItemListRequest) returns (GetOrderItemListResponse) {}
     rpc GetOrderItemById (GetOrderItemByIDRequest) returns (OrderItem) {} 
 }
@@ -19,19 +21,17 @@ service OrderItemService {
 // OrderItem ...
 message OrderItem { 
     string id = 1;
-    string productName= 2;
-    string client_id = 3;
-    string client_fullname = 4;
+    string oredr_id =2 ;
+    Product productInfo =3;
+    Client clientInfo =4;
     string totalPrice = 5;
     string created_at = 6;
     string updated_at = 7;
 }
 
 message CreateOrderItemRequest{
-    string productName= 1;
-    string client_id = 2;
-    string client_fullname = 3;
-    string totalPrice = 4;
+    string oredr_id =2 ;
+    string totalPrice = 3;
 }
 
 
@@ -45,19 +45,26 @@ message GetOrderItemListRequest{
 }
 message GetOrderItemListResponse{
     repeated OrderItem orderItems = 1;
+
 }
 
 message GetOrderItemByIDRequest{
     string id =1;
 }
 
-message GetOrderItemByIDResponse{
-    string id = 1;
-    string productName= 2;
-    string client_id = 3;
-    string client_fullname = 4;
-    string totalPrice = 5;
-    string created_at = 6;
-    string updated_at = 7;
-}
+// message GetOrderItemByIDResponse{
+//     string id = 1;
+//     string productName= 2;
+//     string client_id = 3;
+//     string client_fullname = 4;
+//     string totalPrice = 5;
+//     string created_at = 6;
+//     string updated_at = 7;
+// }
 
+message UpdateOrderItemRequest{
+    string id =1;
+    string order_id =2;
+    string count = 3;
+    string totalPrice = 4;
+}

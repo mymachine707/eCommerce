@@ -8,3 +8,18 @@
 update order 
     1   update order qiganda order item update bo'lishi kere   
     2   update order qilish uchun created_at dan maxsimum 2 daqiqa o'tmagan bo'lishi kere, Agar o'tgan bo'sa updatega ruhsat bermiman
+
+
+
+
+
+e6176ddf-4647-4ede-b1ce-1c065224cf84  product
+
+62ffaa19-ba46-456d-be7d-e4fece7dd2ce client
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzA4NjkyNDcsImlhdCI6MTY3MDg2NTY0NywidXNlcl9pZCI6ImQ3ZGM5YjYzLTUwZmUtNGMxNS04MDIwLWU3N2QyNzRhZmNjNiIsInVzZXJuYW1lIjoibXlfbWFjaGluZV83MDcifQ.
+
+
+19a5cb4b-ff09-4534-86a1-cef7f83900f1   order
+
