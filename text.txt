@@ -6,22 +6,59 @@
 
 
 update order 
-    1   update order qiganda order item update bo'lishi kere   
+    1   myproduct list shakllantirish kere
+    2   create order ishlavotti lekin response qaytarmiyapti
     2   update order qilish uchun created_at dan maxsimum 2 daqiqa o'tmagan bo'lishi kere, Agar o'tgan bo'sa updatega ruhsat bermiman
     3   GetClientOrders clientga tegishli orderlar sonini tortish
 
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzA5MTE0ODcsImlhdCI6MTY3MDkwNzg4NywidXNlcl9pZCI6ImQ3ZGM5YjYzLTUwZmUtNGMxNS04MDIwLWU3N2QyNzRhZmNjNiIsInVzZXJuYW1lIjoibXlfbWFjaGluZV83MDcifQ.gQy8HgUUBMJ-l880e0GSRgEu2miLZ7a3F3bCRDMMyv4
+3d5ee64f-1810-404f-a804-58f12dd18279 product
+
+13d658b3-0fc6-48d7-ab23-40838a0e47ae client
+
+d8497a29-1c42-41d1-8052-7f6b5c83a838 order
 
 
-03ffa64d-78e3-43a7-8bcf-88ef4dbe8359 client 
+{
+        "id": "d7dfca84-e15c-4594-8724-3cb8aaa443f9",
+        "product_id": "edaf3dbc-6609-4864-ab63-8221b7cd5b4c",
+        "client_id": "c36a397b-57ce-4d3b-88c4-3758b6c8aeb4",
+        "count": 2,
+        "created_at": "2022-12-13T17:33:41.511506Z"
+      }
 
-9b6ea290-f973-4463-8a8d-2a97b01ee771 client
+{
+  "message": "CreatCategory",
+  "data": {
+    "id": "196e79d0-66f6-41d9-a21f-6bb9d6117d37",
+    "category_name": "Lavash 3",
+    "description": "Qaynoq va mazali Lavash",
+    "created_at": "2022-12-13T17:27:31.512097Z"
+  }
+}
 
-fe1491dd-197d-4853-a707-d8c0362c7259 product
+{
+  "message": "CreatClient",
+  "data": {
+    "id": "c36a397b-57ce-4d3b-88c4-3758b6c8aeb4",
+    "firstname": "John 3",
+    "lastname": "Doe 5",
+    "username": "Jdoe002",
+    "phoneNumber": "89789789789",
+    "address": "wall street",
+    "type": "client",
+    "password": "$argon2id$v=19$models=65536,t=3,p=4$ZPRrCadf8KnqxZ+OeG43PQ$3VSD0A2JWkkBQG4F5xb/Qn3hgay4LTcVjwF2urC9hWU",
+    "created_at": "2022-12-13T17:29:02.992487Z"
+  }
+}
 
-367ca98a-1781-4d0c-96e0-cf173ce24906 product
-
-91e0229c-6317-4a1b-8371-c8c12e20ee11 order
-
-7e1e338c-aab8-462e-8bc9-0d9414287cd6 order
+{
+  "message": "Product Created",
+  "data": {
+    "id": "edaf3dbc-6609-4864-ab63-8221b7cd5b4c",
+    "category_id": "196e79d0-66f6-41d9-a21f-6bb9d6117d37",
+    "product_name": "string",
+    "price": 12310,
+    "created_at": "2022-12-13T17:32:15.821688Z"
+  }
+}

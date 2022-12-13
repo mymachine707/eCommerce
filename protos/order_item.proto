@@ -11,7 +11,6 @@ import "protos/client.proto";
 // The service definition.
 service OrderItemService {
     rpc Ping (Empty) returns (Pong) {}
-    rpc CreateOrderItem (CreateOrderItemRequest) returns (Empty) {}
     rpc UpdateOrder (UpdateOrderItemRequest) returns (Empty) {}
     rpc DeleteOrderItem (DeleteOrderItemRequest) returns (Empty) {}
     rpc GetOrderItemList (GetOrderItemListRequest) returns (GetOrderItemListResponse) {}
