@@ -8,3 +8,20 @@
 update order 
     1   update order qiganda order item update bo'lishi kere   
     2   update order qilish uchun created_at dan maxsimum 2 daqiqa o'tmagan bo'lishi kere, Agar o'tgan bo'sa updatega ruhsat bermiman
+    3   GetClientOrders clientga tegishli orderlar sonini tortish
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzA5MTE0ODcsImlhdCI6MTY3MDkwNzg4NywidXNlcl9pZCI6ImQ3ZGM5YjYzLTUwZmUtNGMxNS04MDIwLWU3N2QyNzRhZmNjNiIsInVzZXJuYW1lIjoibXlfbWFjaGluZV83MDcifQ.gQy8HgUUBMJ-l880e0GSRgEu2miLZ7a3F3bCRDMMyv4
+
+
+03ffa64d-78e3-43a7-8bcf-88ef4dbe8359 client 
+
+9b6ea290-f973-4463-8a8d-2a97b01ee771 client
+
+fe1491dd-197d-4853-a707-d8c0362c7259 product
+
+367ca98a-1781-4d0c-96e0-cf173ce24906 product
+
+91e0229c-6317-4a1b-8371-c8c12e20ee11 order
+
+7e1e338c-aab8-462e-8bc9-0d9414287cd6 order
