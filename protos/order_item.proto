@@ -24,19 +24,20 @@ message OrderItem {
     string oredr_id =2 ;
     Product productInfo =3;
     Client clientInfo =4;
-    string totalPrice = 5;
-    string created_at = 6;
-    string updated_at = 7;
+    int32 totalPrice = 5;
+    int32 count = 6;
+    string created_at = 7;
+    string updated_at = 8;
 }
 
 message CreateOrderItemRequest{
-    string oredr_id =2 ;
-    string totalPrice = 3;
+    string oredr_id = 1;
+    int32 totalPrice = 2;
+    int32 count =3;
 }
 
-
 message DeleteOrderItemRequest{
-    string id = 1;
+    string oredr_id = 1;
 }
 
 message GetOrderItemListRequest{
@@ -53,8 +54,7 @@ message GetOrderItemByIDRequest{
 }
 
 message UpdateOrderItemRequest{
-    string id =1;
-    string order_id =2;
-    string count = 3;
-    string totalPrice = 4;
+    string order_id =1;
+    int32 totalPrice = 2;
+    int32 count = 3;
 }
