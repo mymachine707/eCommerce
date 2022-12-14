@@ -28,8 +28,8 @@ message CreateOrderRequest{
 }
 
 message GetOrderListRequest{
-    int32 limit=1;
-    int32 offset=2;
+    int32 offset=1;
+    int32 limit=2;
 }
 
 message GetOrderListResponse{

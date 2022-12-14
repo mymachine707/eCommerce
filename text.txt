@@ -6,11 +6,10 @@
 
 
 update order 
-    1   myproduct list shakllantirish kere
-    2   create order ishlavotti lekin response qaytarmiyapti
-    2   update order qilish uchun created_at dan maxsimum 2 daqiqa o'tmagan bo'lishi kere, Agar o'tgan bo'sa updatega ruhsat bermiman
-    3   GetClientOrders clientga tegishli orderlar sonini tortish
-
+    1   update order qilish uchun created_at dan maxsimum 2 daqiqa o'tmagan bo'lishi kere, Agar o'tgan bo'sa updatega ruhsat bermiman
+    2   GetClientOrders clientga tegishli orderlar sonini tortish
+    3   yangi orderni getwayga ulash kere
+    4   create order qiganda auth servce o'zidan client ma'lumotlarini oladigan qilish kere
 
 
 
