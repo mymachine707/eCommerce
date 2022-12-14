@@ -25,3 +25,5 @@ order itemga :
 order id sini yozsin
 product + quanity listi
 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzEwMjM4NDQsImlhdCI6MTY3MTAyMDI0NCwidXNlcl9pZCI6IjEzZDY1OGIzLTBmYzYtNDhkNy1hYjIzLTQwODM4YTBlNDdhZSIsInVzZXJuYW1lIjoidyJ9.NcumWsDIJwiUdWIYc2oQGcjJnuvJNWn3Oiikh-LEyZc
+

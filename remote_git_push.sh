@@ -1,27 +1,27 @@
 cd eCommerce_apiGETWAY/
 git add .
-git commit -m"Order service swaggerga ulandi. Authorization yoqildi hammasi ishlavotti. Clean up ga tayyor"
+git commit -m"Clean up 1"
 git push
 cd ..
 
 cd category_service/
 git add .
-git commit -m"Order service swaggerga ulandi. Authorization yoqildi hammasi ishlavotti. Clean up ga tayyor"
+git commit -m"Clean up 1"
 git push
 cd ..
 
 cd order_service/
 git add .
-git commit -m"Order service swaggerga ulandi. Authorization yoqildi hammasi ishlavotti. Clean up ga tayyor"
+git commit -m"Clean up 1"
 git push
 cd ..
 
 cd authorizationClient/
 git add .
-git commit -m"Order service swaggerga ulandi. Authorization yoqildi hammasi ishlavotti. Clean up ga tayyor"
+git commit -m"Clean up 1"
 git push
 cd ..
 
 git add .
-git commit -m"Order service swaggerga ulandi. Authorization yoqildi hammasi ishlavotti. Clean up ga tayyor"
+git commit -m"Clean up 1"
 git push
