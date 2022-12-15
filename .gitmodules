@@ -10,3 +10,9 @@
 [submodule "authorizationClient"]
 	path = authorizationClient
 	url = https://github.com/mymachine707/authorizationClient.git
+[submodule "authorization_service"]
+	path = authorization_service
+	url = https://github.com/mymachine707/authorization_service.git
+[submodule "getway_service"]
+	path = getway_service
+	url = https://github.com/mymachine707/getway_service.git

@@ -1,4 +1,4 @@
-cd eCommerce_apiGETWAY/
+cd getway_service/
 git add .
 git commit -m"Clean up news"
 git push
@@ -16,7 +16,7 @@ git commit -m"Clean up news"
 git push
 cd ..
 
-cd authorizationClient/
+cd authorization_service/
 git add .
 git commit -m"Clean up news"
 git push
