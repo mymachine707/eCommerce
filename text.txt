@@ -19,7 +19,7 @@ order table ga:
  order id 
  client_id
  total price
-
+1
 
 order itemga :
 
