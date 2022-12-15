@@ -20,6 +20,8 @@ message Order {
     string id = 1;
     Client client = 2;
     int32 total_price= 3;
+    string status = 4;
+    string created_at = 5;
 }
 
 message CreateOrderRequest{
