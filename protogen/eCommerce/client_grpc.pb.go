@@ -30,6 +30,7 @@ type ClientServiceClient interface {
 	GetClientById(ctx context.Context, in *GetClientByIDRequest, opts ...grpc.CallOption) (*Client, error)
 	Login(ctx context.Context, in *LoginAuthRequest, opts ...grpc.CallOption) (*TokenResponse, error)
 	HasAccess(ctx context.Context, in *TokenRequest, opts ...grpc.CallOption) (*HasAccessResponse, error)
+	CreateSuperUser(ctx context.Context, in *CreateSudoRequest, opts ...grpc.CallOption) (*Client, error)
 }
 
 type clientServiceClient struct {
@@ -112,6 +113,15 @@ func (c *clientServiceClient) HasAccess(ctx context.Context, in *TokenRequest, o
 	return out, nil
 }
 
+func (c *clientServiceClient) CreateSuperUser(ctx context.Context, in *CreateSudoRequest, opts ...grpc.CallOption) (*Client, error) {
+	out := new(Client)
+	err := c.cc.Invoke(ctx, "/ClientService/CreateSuperUser", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ClientServiceServer is the server API for ClientService service.
 // All implementations must embed UnimplementedClientServiceServer
 // for forward compatibility
@@ -124,6 +134,7 @@ type ClientServiceServer interface {
 	GetClientById(context.Context, *GetClientByIDRequest) (*Client, error)
 	Login(context.Context, *LoginAuthRequest) (*TokenResponse, error)
 	HasAccess(context.Context, *TokenRequest) (*HasAccessResponse, error)
+	CreateSuperUser(context.Context, *CreateSudoRequest) (*Client, error)
 	mustEmbedUnimplementedClientServiceServer()
 }
 
@@ -154,6 +165,9 @@ func (UnimplementedClientServiceServer) Login(context.Context, *LoginAuthRequest
 }
 func (UnimplementedClientServiceServer) HasAccess(context.Context, *TokenRequest) (*HasAccessResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method HasAccess not implemented")
+}
+func (UnimplementedClientServiceServer) CreateSuperUser(context.Context, *CreateSudoRequest) (*Client, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateSuperUser not implemented")
 }
 func (UnimplementedClientServiceServer) mustEmbedUnimplementedClientServiceServer() {}
 
@@ -312,6 +326,24 @@ func _ClientService_HasAccess_Handler(srv interface{}, ctx context.Context, dec 
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ClientService_CreateSuperUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateSudoRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ClientServiceServer).CreateSuperUser(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/ClientService/CreateSuperUser",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ClientServiceServer).CreateSuperUser(ctx, req.(*CreateSudoRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ClientService_ServiceDesc is the grpc.ServiceDesc for ClientService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -350,6 +382,10 @@ var ClientService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "HasAccess",
 			Handler:    _ClientService_HasAccess_Handler,
+		},
+		{
+			MethodName: "CreateSuperUser",
+			Handler:    _ClientService_CreateSuperUser_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

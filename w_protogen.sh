@@ -17,4 +17,3 @@ cp -r protogen ./order_service/
 
 rm -rf ./authorization_service/protogen
 cp -r protogen ./authorization_service/
-

@@ -18,6 +18,8 @@ service ClientService {
 
     rpc Login (LoginAuthRequest) returns (TokenResponse) {}
     rpc HasAccess (TokenRequest) returns (HasAccessResponse) {}
+
+    rpc CreateSuperUser (CreateSudoRequest) returns (Client) {}
 }
 
 message HasAccessResponse {
@@ -53,6 +55,17 @@ message Client {
 }
 
 message CreateClientRequest{
+    string firstname = 1;
+    string lastname = 2;
+    string username = 3;
+    string phoneNumber = 4;
+    string address = 5;
+    string type =6;
+    string password = 7;
+}
+
+
+message CreateSudoRequest{
     string firstname = 1;
     string lastname = 2;
     string username = 3;
