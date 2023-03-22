@@ -7,3 +7,5 @@ git submodule add https://github.com/mymachine707/getway_service.git
 
 
 ssh connection with terminal
+
+add message
